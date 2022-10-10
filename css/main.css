@@ -1,0 +1,728 @@
+/* Font Style */
+@font-face {
+    font-family: "Avenir Next Bold";
+    src: url("../fonts/avenir-next/AvenirNext-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Avenir Next Regular";
+    src: url("../fonts/avenir-next/AvenirNext-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Avenir Next Demi Bold";
+    src: url("../fonts/avenir-next/AvenirNext-DemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Raleway SemiBold";
+    src: url("../fonts/raleway/Raleway-SemiBold.ttf");
+}
+
+body,
+html {
+    font-size: 100%;
+    height: 100%;
+}
+
+/*Navbar Style*/
+.qomm {
+    position: fixed;
+    z-index: 30;
+    left: 4%;
+    top: 6%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.menu {
+    position: fixed;
+    margin-top: 2vh;
+    /* margin-right: 3vw; */
+    width: 200px;
+    top: 0;
+    right: 4%;
+    background-color: transparent;
+    text-align: right;
+    font-family: Avenir Next Demi Bold;
+    font-weight: bolder;
+    z-index: 10;
+}
+
+.menu-web{
+    list-style: none;
+    padding-top: 10px;
+}
+
+.menu-web a{
+    color: #fff;
+    font-weight: bold;
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+.menu-web a:hover {
+    color: #fdbe11;
+}
+
+.menu-list {
+    color: #000000;
+    font-family: Avenir Next Demi Bold;
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+.menu-list:hover {
+    color: #fdbe11;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    margin-left: 2vw;
+}
+
+.navbar-custom {
+    background-color: #2e5ab3;
+}
+
+.navbar-collapse {
+    text-align: left;
+    background-color: #f1f1f1;
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    background: transparent !important;
+}
+
+.navbar-toggler .icon-bar {
+    background-color: #fff;
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: ease all .2s;
+}
+
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+
+.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:hover>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:active>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 4px);
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+    opacity: 0;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+    transition: ease all .2s;
+}
+
+/*Content Styles*/
+.layouts {
+    position: absolute;
+    margin-top: 50vh;
+    left: 3%;
+    transform: translateY(-50%);
+}
+
+.wrapper {
+    text-align: left;
+    padding: 2rem;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .layouts {
+        position: absolute;
+        margin-top: 40vh;
+        left: 0;
+        transform: translateY(-40%);
+    }
+}
+
+/*Section 1*/
+.view1 {
+    background: url('../img/home.jpg') center center no-repeat;
+    height: inherit;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+    .view1 {
+        background: url('../img/mob_home.jpg') center center no-repeat;
+        height: inherit;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+
+.wrapper1 {
+    text-align: left;
+}
+
+.layouts1 {
+    position: absolute;
+    margin-top: 50vh;
+    left: 3%;
+    transform: translateY(-50%);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .wrapper1 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .layouts1 {
+        position: absolute;
+        bottom: 0;
+        transform: translateY(0);
+        padding-top: 1.5em;
+        left: 0;
+        background-color: rgb(43, 43, 43);
+    }
+}
+
+/*Section 2*/
+
+.subview-a {
+    background: url('../img/technology.jpg') center center no-repeat;
+    height: inherit;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+    .subview-a {
+        background: url('../img/mob_technology.jpg') center center no-repeat;
+        height: inherit;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+
+.subview-b {
+    background: url('../img/technology_2.jpg') center center no-repeat;
+    height: inherit;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+    .subview-b {
+        background: url('../img/mob_technology_2.jpg') center center no-repeat;
+        height: inherit;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+
+.subview-c {
+    background: url('../img/technology_3.jpg') center center no-repeat;
+    height: inherit;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+    .subview-c {
+        background: url('../img/mob_technology_3.jpg') center center no-repeat;
+        height: inherit;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+
+.section_technology_colum_header {
+    font-family: Avenir Next Bold;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 1rem;
+}
+
+/*Section 3*/
+
+.view3 {
+    background: url('../img/advisory.jpg') center center no-repeat;
+    height: inherit;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+    .view3 {
+        background: url('../img/mob_advisory.jpg') center center no-repeat;
+        height: inherit;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+
+/*Section 4*/
+
+.subview-d {
+    background: url('../img/otc_trading.jpg') center center no-repeat;
+    height: inherit;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+    .subview-d {
+        background: url('../img/mob_otc_trading.jpg') center center no-repeat;
+        height: inherit;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+
+.subview-e {
+    background: url('../img/otc_trading_2.jpg') center center no-repeat;
+    height: inherit;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+    .subview-e {
+        background: url('../img/mob_otc_trading_2.jpg') center center no-repeat;
+        height: inherit;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+
+.subview-f {
+    background: url('../img/otc_trading_3.jpg') center center no-repeat;
+    height: inherit;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+    .subview-f {
+        background: url('../img/mob_otc_trading_3.jpg') center center no-repeat;
+        height: inherit;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+
+.wrapper2 {
+    text-align: left;
+}
+
+/*Section 5*/
+.view5 {
+    background: url('../img/investments.jpg') center center no-repeat;
+    height: inherit;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+    .view5 {
+        background: url('../img/mob_investments.jpg') center center no-repeat;
+        height: inherit;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+
+/*Badge Styling*/
+
+.badge {
+    padding: 0.5rem;
+    border-radius: 100px;
+    margin: 0.1rem;
+}
+
+.badge-space {
+    display: inline-block;
+}
+
+.badge-primary {
+    background-color: #2e5ab3;
+    font-family: Avenir Next Demi Bold;
+    color: #fff;
+}
+
+.badge-yellow {
+    background-color: #fdbe11;
+    font-family: Avenir Next Demi Bold;
+    color: #fff;
+}
+
+/*Footer Styles*/
+
+.foots {
+    position: absolute;
+    text-align: right;
+    color: white;
+    font-size: 0.625em;
+    bottom: 3vh;
+    right: 4%;
+    font-family: Avenir Next Regular;
+}
+
+.foots a {
+    text-decoration: none;
+    color: white;
+}
+
+.foots a:hover {
+    color: #fdbe11;
+}
+
+/* Styles specific for this example */
+
+.pos {
+    margin-top:2vh;
+    margin-left: 2vw;
+}
+
+.pos2 {
+    margin-top:2vh;
+}
+
+.cols {
+    padding-left: 0;
+}
+
+input[type="button"] {
+    -webkit-appearance: none;
+    font-family: Raleway SemiBold;
+    margin: 0 10px 0 0;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    border-top: 2px solid transparent;
+}
+
+input:hover {
+    color: #fdbe11;
+    border-top: 2px solid #fdbe11;
+}
+
+input.anchor-active {
+    color: #fdbe11;
+    border-top: 2px solid #fdbe11;
+}
+
+span.anchor-active {
+    color: #fdbe11;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    >.col,
+    >[class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    font-family: Avenir Next Demi Bold;
+    color: #FFF;
+    padding: 0.5rem 0.5rem;
+}
+
+.btn-primary {
+    background-color: #7a7a7a;
+    border-color: #ffffff;
+    font-family: Avenir Next Demi Bold;
+}
+
+.btn-blue {
+    background-color: #2e5ab3;
+    border-color: #ffffff;
+    font-family: Avenir Next Demi Bold;
+}
+
+.btn-yellow {
+    background-color: #fdbe11;
+    border-color: #ffffff;
+    font-family: Avenir Next Demi Bold;
+}
+
+.btn-add-service {
+    background-color: none;
+    border-color: #ffffff;
+    border: none;
+    color: #FFF;
+    font-family: Avenir Next Demi Bold;
+}
+
+.btn-add-service:hover,
+.btn-add-service:focus,
+.btn-add-service:active {
+    background-color: none;
+    border-color: #ffffff;
+    border: none;
+    color: #FFF;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    color: #fff;
+    background-color: #c4c4c4 !important;
+}
+
+.btn:active,
+.btn:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+    box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+.spacer {
+    margin-top: 2rem;
+}
+
+/*@Media*/
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .qomm {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .wrapper {
+        padding: 1rem;
+    }
+
+    .foots {
+        /* position: absolute; */
+        font-size: 0.6em;
+        font-family: Avenir Next Regular;
+        text-align: left;
+        left: 1%;
+        bottom: 3vh;
+    }
+
+    .p1a {
+        font-size: calc(1rem + ((1vw - 0.2rem) * 0.7143)); /*1.2rem to 1rem*/
+    }
+
+    .p2a {
+        font-size: calc(0.8rem + ((1vw - 0.2rem) * 0.7143)); /*1rem to 0.8rem*/
+    }
+
+    .p1 {
+        font-size: calc(1.2rem + ((1vw - 0.2rem) * 1.7857)); /*1.7rem to 1.2*/
+    }
+
+    .p2 {
+        font-size: calc(0.8rem + ((1vw - 0.2rem) * 0.7143)); /*1rem to 0.8*/
+    }
+
+    .p3 {
+        font-size: calc(1rem + ((1vw - 0.2rem) * 0.7143)); /*1.2rem to 1rem*/
+    }
+
+    .p4 {
+        font-size: calc(1rem + ((1vw - 0.2rem) * 0.7143)); /*1.2rem to 1 rem*/
+    }
+
+    .section_technology_colum_header p {
+        padding-left: 25%;
+    }
+
+    .theservice {
+        font-size: calc(0.8rem + ((1vw - 0.2rem) * 0.7143)); /*1rem to 0.8*/
+    }
+
+    .service {
+        font-size: calc(0.7rem + ((1vw - 0.2rem) * 0.3571)); /*0.8rem to 0.7*/
+    }
+
+    .badge {
+        font-size: calc(0.6rem + ((1vw - 0.2rem) * 0.7143)); /*0.8rem to 0.6*/
+    }
+
+    .spacer {
+        margin-top: 0.4rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    .btn-add-service {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 768.98px) and (max-width: 1440px) {
+    .navbar {
+        display: none;
+    }
+
+    .p1 {
+        font-size: 2.5rem;
+    }
+
+    .p1a {
+        font-size: 2.5rem;
+    }
+
+    .p2a {
+        font-size: 1.2rem;
+    }
+
+    .p2 {
+        font-size: 1.2rem;
+    }
+
+    .p3 {
+        font-size: 1.5rem
+    }
+
+    .p4 {
+        font-size: 1.8rem;
+    }
+
+    .section_technology_colum_header p {
+        margin-left: 25%;
+    }
+
+    .theservice {
+        font-size: 1rem;
+    }
+
+    .service {
+        font-size: 1rem;
+    }
+
+    .badge {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .btn-add-service {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (min-width: 1440.98px) and (max-width: 1990px) {
+    .navbar {
+        display: none;
+    }
+
+    .foots {
+        /* position: absolute; */
+        font-size: 1em;
+        font-family: Avenir Next Regular;
+        text-align: right;
+        right: 4%;
+        bottom: 3vh;
+    }
+
+    .p1 {
+        font-size: 3.5rem;
+    }
+
+    .p1a {
+        font-size: 3.5rem;
+    }
+
+    .p2a {
+        font-size: 1.5rem;
+    }
+
+    .p2 {
+        font-size: 1.5rem;
+    }
+
+    .p3 {
+        font-size: 2.3rem;
+    }
+
+    .p4 {
+        font-size: 1.5rem;
+    }
+
+    .section_technology_colum_header p {
+        margin-left: 25%;
+    }
+
+    .theservice {
+        font-size: 1.2rem;
+    }
+
+    .service {
+        font-size: 1.2rem;
+    }
+
+    .badge {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .btn-add-service {
+        font-size: 1rem;
+    }
+
+}
